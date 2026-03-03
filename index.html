@@ -458,21 +458,23 @@
   </div>
   <div class="reveal" style="transition-delay:0.2s;">
     <div style="font-family:var(--font-mono); font-size:0.7rem; color:var(--green); letter-spacing:0.2em; margin-bottom:2rem;">// SEND A MESSAGE</div>
-    <div class="contact-form">
-      <div class="form-group">
-        <label class="form-label">NAME</label>
-        <input class="form-input" type="text" placeholder="Your name">
+    <form method="POST" action="https://formspree.io/f/mjgeqjlw">
+      <div class="contact-form">
+        <div class="form-group">
+          <label class="form-label">NAME</label>
+          <input class="form-input" type="text" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">EMAIL</label>
+          <input class="form-input" name="email" type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">MESSAGE</label>
+          <textarea class="form-input" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-start; border:none; cursor:none;" onclick="sendMsg(this)">SEND MESSAGE</button>
       </div>
-      <div class="form-group">
-        <label class="form-label">EMAIL</label>
-        <input class="form-input" type="email" placeholder="your@email.com">
-      </div>
-      <div class="form-group">
-        <label class="form-label">MESSAGE</label>
-        <textarea class="form-input" rows="5" placeholder="Tell me about your project..."></textarea>
-      </div>
-      <button class="btn btn-primary" style="align-self:flex-start; border:none; cursor:none;" onclick="sendMsg(this)">SEND MESSAGE</button>
-    </div>
+    </form>
   </div>
 </section>
 
