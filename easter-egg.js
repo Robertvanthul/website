@@ -7,7 +7,7 @@
   const COLS = 20;
   const ROWS = 16;
   const CELL = 16;
-  const API  = '/api/leaderboard';
+  const API  = 'https://teunisw.nl/api/leaderboard';
 
   const overlay = document.createElement('div');
   overlay.id = 'egg-overlay';
